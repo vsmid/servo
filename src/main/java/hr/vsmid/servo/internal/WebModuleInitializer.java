@@ -9,6 +9,9 @@ import jakarta.servlet.annotation.HandlesTypes;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Set;
 
+/**
+ * @see ServletContainerInitializer
+ */
 @HandlesTypes({WebModule.class})
 public class WebModuleInitializer implements ServletContainerInitializer {
 
