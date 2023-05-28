@@ -4,8 +4,20 @@ _Simple Java library for building Servlet based applications in a declarative an
 
 ## Maven dependency
 
-```xml
+This dependency has not yet been published to any public Maven repository, so before you can use it you should
+install it to your local Maven repository.
 
+### Build & install
+
+In the root directory of this project run the following Maven command:
+
+```bash 
+mvn clean install
+```
+
+### Maven coordinates
+
+```xml
 <dependency>
     <groupId>hr.vsmid</groupId>
     <artifactId>servo</artifactId>
@@ -51,66 +63,66 @@ import java.util.List;
 
 public class WebApp extends WebModule {
 
-  @Override
-  public void configure(WebConfigurer webConfigurer) {
-    webConfigurer
-        .listener(
-            new ServletContextListener() {
-              @Override
-              public void contextInitialized(ServletContextEvent sce) {
-                System.out.println("Context initialized!");
-              }
-            })
-        .filter(
-            (request, response, chain) -> {
-              System.out.println("filter 1...");
-              chain.doFilter(request, response);
-            },
-            filter -> filter.addMappingForUrlPatterns(EnumSet.of(REQUEST), true, "/api1/*"))
-        .filter(
-            (request, response, chain) -> {
-              System.out.println("filter 2...");
-              chain.doFilter(request, response);
-            },
-            filter -> {
-              filter.addMappingForUrlPatterns(EnumSet.of(REQUEST), true, "/api2/*");
-              filter.setAsyncSupported(false);
-            })
-        .servlet(
-            new HttpServlet() {
-              @Override
-              protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-                  throws IOException {
-                resp.setStatus(SC_OK);
-                resp.getWriter().println("Hello!");
-              }
-            },
-            servlet -> {
-              servlet.addMapping("/api1/*", "/api2/*");
-              servlet.setAsyncSupported(false);
-              servlet.setLoadOnStartup(1);
-            })
-        .servlet(
-            "SecureServlet",
-            new HttpServlet() {
-              @Override
-              protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-                  throws IOException {
-                resp.setStatus(SC_OK);
-                resp.getWriter().println("Hello from secured servlet!");
-              }
-            },
-            servlet -> {
-              servlet.addMapping("/api3/*");
-              servlet.setServletSecurity(
-                  new ServletSecurityElement(
-                      denyAll(),
-                      List.of(
-                          httpGet(permitAll()),
-                          httpPost(permit("admin")),
-                          httpDelete(permitConfidential("admin")))));
-            });
-  }
+    @Override
+    public void configure(WebConfigurer webConfigurer) {
+        webConfigurer
+                .listener(
+                        new ServletContextListener() {
+                            @Override
+                            public void contextInitialized(ServletContextEvent sce) {
+                                System.out.println("Context initialized!");
+                            }
+                        })
+                .filter(
+                        (request, response, chain) -> {
+                            System.out.println("filter 1...");
+                            chain.doFilter(request, response);
+                        },
+                        filter -> filter.addMappingForUrlPatterns(EnumSet.of(REQUEST), true, "/api1/*"))
+                .filter(
+                        (request, response, chain) -> {
+                            System.out.println("filter 2...");
+                            chain.doFilter(request, response);
+                        },
+                        filter -> {
+                            filter.addMappingForUrlPatterns(EnumSet.of(REQUEST), true, "/api2/*");
+                            filter.setAsyncSupported(false);
+                        })
+                .servlet(
+                        new HttpServlet() {
+                            @Override
+                            protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+                                    throws IOException {
+                                resp.setStatus(SC_OK);
+                                resp.getWriter().println("Hello!");
+                            }
+                        },
+                        servlet -> {
+                            servlet.addMapping("/api1/*", "/api2/*");
+                            servlet.setAsyncSupported(false);
+                            servlet.setLoadOnStartup(1);
+                        })
+                .servlet(
+                        "SecureServlet",
+                        new HttpServlet() {
+                            @Override
+                            protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+                                    throws IOException {
+                                resp.setStatus(SC_OK);
+                                resp.getWriter().println("Hello from secured servlet!");
+                            }
+                        },
+                        servlet -> {
+                            servlet.addMapping("/api3/*");
+                            servlet.setServletSecurity(
+                                    new ServletSecurityElement(
+                                            denyAll(),
+                                            List.of(
+                                                    httpGet(permitAll()),
+                                                    httpPost(permit("admin")),
+                                                    httpDelete(permitConfidential("admin")))));
+                        });
+    }
 }
 
 ```
