@@ -45,7 +45,7 @@ public class WebConfigurer {
   /**
    * @see ServletContext#setSessionTrackingModes(Set)
    */
-  public WebConfigurer sessionTrackingMode(SessionTrackingMode... sessionTrackingModes) {
+  public WebConfigurer sessionTrackingModes(SessionTrackingMode... sessionTrackingModes) {
     context.setSessionTrackingModes(Set.of(sessionTrackingModes));
     return this;
   }
