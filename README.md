@@ -1,3 +1,9 @@
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=vsmid_servo&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=vsmid_servo)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=vsmid_servo&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=vsmid_servo)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=vsmid_servo&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=vsmid_servo)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=vsmid_servo&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=vsmid_servo)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=vsmid_servo&metric=bugs)](https://sonarcloud.io/summary/new_code?id=vsmid_servo)
+
 # S e r v o
 
 _Simple Java library for building Servlet based applications in a declarative and programmatic way._
