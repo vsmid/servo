@@ -1,14 +1,16 @@
 <p>
-  <h2 style="text-align: center">S e r v o</h2>
+  <h1 align="center">S e r v o</h1>
 </p>
-
-_Simple Java library for building Servlet based applications in a declarative and programmatic way._
-
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=vsmid_servo&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=vsmid_servo)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=vsmid_servo&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=vsmid_servo)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=vsmid_servo&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=vsmid_servo)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=vsmid_servo&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=vsmid_servo)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=vsmid_servo&metric=coverage)](https://sonarcloud.io/summary/new_code?id=vsmid_servo)
+<p align="center">
+   <label><i>Simple Java library for building Servlet based applications in a declarative and programmatic way.</i></label>
+</p>
+<p align="center">
+  <a href="https://sonarcloud.io/dashboard?id=vsmid_servo"><img src="https://sonarcloud.io/api/project_badges/measure?project=vsmid_servo&metric=alert_status"/></a>
+  <a href="https://sonarcloud.io/dashboard?id=vsmid_servo"><img src="https://sonarcloud.io/api/project_badges/measure?project=vsmid_servo&metric=security_rating"/></a>
+  <a href="https://sonarcloud.io/dashboard?id=vsmid_servo"><img src="https://sonarcloud.io/api/project_badges/measure?project=vsmid_servo&metric=sqale_rating"/></a>
+  <a href="https://sonarcloud.io/dashboard?id=vsmid_servo"><img src="https://sonarcloud.io/api/project_badges/measure?project=vsmid_servo&metric=vulnerabilities"/></a>
+  <a href="https://sonarcloud.io/dashboard?id=vsmid_servo"><img src="https://sonarcloud.io/api/project_badges/measure?project=vsmid_servo&metric=coverage"/></a>
+</p>
 
 ## Features
 
