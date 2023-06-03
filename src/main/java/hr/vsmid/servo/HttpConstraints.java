@@ -7,6 +7,7 @@ import static jakarta.servlet.annotation.ServletSecurity.TransportGuarantee.NONE
 
 import jakarta.servlet.HttpConstraintElement;
 import jakarta.servlet.HttpMethodConstraintElement;
+import jakarta.servlet.annotation.HttpConstraint;
 
 /**
  * A set of predefined {@link jakarta.servlet.HttpConstraintElement} and {@link
@@ -14,6 +15,8 @@ import jakarta.servlet.HttpMethodConstraintElement;
  * readability when setting servlet security.
  */
 public class HttpConstraints {
+
+  private HttpConstraints() {}
 
   /**
    * Assumes {@link jakarta.servlet.annotation.ServletSecurity.EmptyRoleSemantic#PERMIT} and {@link
