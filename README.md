@@ -3,7 +3,6 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=vsmid_servo&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=vsmid_servo)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=vsmid_servo&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=vsmid_servo)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=vsmid_servo&metric=coverage)](https://sonarcloud.io/summary/new_code?id=vsmid_servo)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=vsmid_servo&metric=bugs)](https://sonarcloud.io/summary/new_code?id=vsmid_servo)
 
 # S e r v o
 
