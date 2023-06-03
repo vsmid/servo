@@ -11,7 +11,7 @@ import jakarta.servlet.HttpConstraintElement;
 import jakarta.servlet.HttpMethodConstraintElement;
 import org.junit.jupiter.api.Test;
 
-public class HttpConstraintsTest {
+class HttpConstraintsTest {
 
   @Test
   void permit() {
