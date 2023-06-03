@@ -28,7 +28,7 @@ mvn clean install
 <dependency>
     <groupId>hr.vsmid</groupId>
     <artifactId>servo</artifactId>
-    <version>0.0.1.snapshot</version>
+    <version>0.0.1-SNAPSHOT</version>
 </dependency>
 ```
 
