@@ -1,6 +1,5 @@
 package hr.vsmid.servo.internal;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 import hr.vsmid.servo.WebConfigurer;
@@ -11,7 +10,6 @@ import jakarta.servlet.ServletRegistration;
 import jakarta.servlet.http.HttpServlet;
 import java.util.Set;
 
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
