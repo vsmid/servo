@@ -9,6 +9,7 @@
   <a href="https://sonarcloud.io/dashboard?id=vsmid_servo"><img src="https://sonarcloud.io/api/project_badges/measure?project=vsmid_servo&metric=security_rating"/></a>
   <a href="https://sonarcloud.io/dashboard?id=vsmid_servo"><img src="https://sonarcloud.io/api/project_badges/measure?project=vsmid_servo&metric=sqale_rating"/></a>
   <a href="https://sonarcloud.io/dashboard?id=vsmid_servo"><img src="https://sonarcloud.io/api/project_badges/measure?project=vsmid_servo&metric=vulnerabilities"/></a>
+  <a href="https://sonarcloud.io/dashboard?id=vsmid_servo"><img src="https://sonarcloud.io/api/project_badges/measure?project=vsmid_servo&metric=reliability_rating"/></a>
   <a href="https://sonarcloud.io/dashboard?id=vsmid_servo"><img src="https://sonarcloud.io/api/project_badges/measure?project=vsmid_servo&metric=coverage"/></a>
 </p>
 
